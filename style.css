@@ -1,0 +1,525 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(245, 245, 245);
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: 1100px;
+    max-width: calc(100% - 30px);
+    margin: auto;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #364f6b;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .wrapper {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 50px;
+    font-weight: 800;
+    font-family: courier;
+    color: #364f6b;
+    white-space: nowrap;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0;
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 16px;
+    white-space: nowrap;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a.tbl-biru {
+    margin-top: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+}
+
+section {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.kolom {
+    flex: 1;
+    min-width: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive;
+    color: #364f6b;
+}
+
+h2 {
+    font-family: "Comic Sans MS", cursive;
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+p {
+    margin: 10px 0;
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+a.tbl-biru {
+    display: inline-block;
+    background: #3f72af;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru:hover {
+    background: #fc5185;
+    text-decoration: none;
+}
+
+a.tbl-pink {
+    display: inline-block;
+    background: #fc5185;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-pink:hover {
+    background: #3f72af;
+    text-decoration: none;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.list-psikolog {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Kartu-psikolog {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.Kartu-psikolog img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.Kartu-psikolog p {
+    font-family: "Comic Sans MS", cursive;
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #364f6b;
+}
+
+.list-Patner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Kartu-patner {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.Kartu-patner img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.Kartu-patner s {
+    font-family: "Comic Sans MS", cursive;
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #364f6b;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 5px 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.logo img {
+    mix-blend-mode: multiply;
+}
+
+.list-mitra {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 20px 0 50px;
+}
+
+.kartu-mitra {
+    width: 180px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(54, 79, 107, 0.1);
+    padding: 20px 16px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.kartu-mitra:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(54, 79, 107, 0.2);
+}
+
+.kartu-mitra-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 12px;
+    border: 3px solid #e8f0f9;
+}
+
+.kartu-mitra-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.kartu-mitra p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #364f6b;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper {
+        max-width: calc(100% - 30px);
+    }
+    nav .wrapper {
+        min-height: auto;
+        padding: 15px 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .logo a {
+        font-size: 38px;
+    }
+    .menu {
+        width: 100%;
+        justify-content: center;
+    }
+    nav ul {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    nav ul li a {
+        padding: 8px 10px;
+        line-height: 24px;
+        font-size: 14px;
+    }
+    section {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    section img {
+        width: 100%;
+        max-width: 500px;
+    }
+    .kolom {
+        width: 100%;
+        margin: 20px 0;
+    }
+    h2 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        max-width: calc(100% - 24px);
+    }
+    nav .wrapper {
+        padding: 12px 0;
+        gap: 8px;
+    }
+    .logo a {
+        font-size: 30px;
+    }
+    nav ul {
+        gap: 3px;
+    }
+    nav ul li a {
+        padding: 7px 8px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    nav ul li a.tbl-biru {
+        padding: 7px 11px;
+        margin-top: 0;
+        margin-left: 2px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    section {
+        margin-bottom: 35px;
+    }
+    section img {
+        width: 100%;
+        max-width: 400px;
+    }
+    .kolom {
+        margin: 15px 0;
+    }
+    .kolom .deskripsi {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    h2 {
+        font-size: 27px;
+        line-height: 35px;
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    a.tbl-biru,
+    a.tbl-pink {
+        padding: 11px 16px;
+        font-size: 13px;
+    }
+    .Kartu-psikolog {
+        width: 45%;
+        min-width: 100px;
+    }
+    .Kartu-psikolog img {
+        width: 90%;
+    }
+    .Kartu-psikolog p {
+        font-size: 14px;
+    }
+    .list-mitra {
+        gap: 12px;
+    }
+    .kartu-mitra {
+        width: 130px;
+        padding: 15px 10px;
+    }
+    .kartu-mitra-img {
+        width: 80px;
+        height: 80px;
+    }
+    .kartu-mitra p {
+        font-size: 12px;
+    }
+    span.psw {
+        float: none;
+        display: block;
+        padding-top: 10px;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+    #home {
+        padding-top: 20px;
+        gap: 20px;
+    }
+    #home img {
+        width: 90% !important;
+        max-width: 350px !important;
+        margin: 0 auto;
+    }
+    #home .kolom {
+        width: 100%;
+        margin: 10px 0 25px;
+        text-align: center;
+    }
+    #home h2 {
+        font-size: 25px;
+        line-height: 33px;
+        margin-bottom: 15px;
+    }
+    #home .deskripsi {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    #home p {
+        font-size: 13px;
+        line-height: 21px;
+    }
+    #home .tbl-pink {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .logo a {
+        font-size: 27px;
+    }
+    nav ul li a {
+        padding: 5px 6px;
+        font-size: 12px;
+    }
+    nav ul li a.tbl-biru {
+        padding: 6px 9px;
+        font-size: 12px;
+        margin-top: 0;
+    }
+    h2 {
+        font-size: 24px;
+        line-height: 31px;
+    }
+    .kolom .deskripsi {
+        font-size: 14px;
+    }
+    p {
+        font-size: 13px;
+    }
+}
